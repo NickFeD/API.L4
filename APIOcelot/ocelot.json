@@ -1,0 +1,33 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{metod}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5280
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{metod}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ],
+      "SwaggerKey": "base"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7037"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "base",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Name",
+          "Version": "v1",
+          "Url": "http://localhost:5280/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

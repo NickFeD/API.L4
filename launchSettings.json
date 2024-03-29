@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "apiocelot": "StartDebugging",
+        "authlearn": "StartDebugging",
+        "graphqlapi": "StartDebugging"
+      }
+    }
+  }
+}
